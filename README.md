@@ -112,3 +112,40 @@ server {
 
 Em GitHub Pages / Netlify / Cloudflare Pages, basta subir a pasta como está —
 não há etapa de build.
+
+## Aparecer no Google (SEO)
+
+O currículo é montado por JavaScript a partir do XML. Para o Google entender de
+quem é a página — e mostrá-la quando alguém busca **"Valdeir Sapará"** — o projeto
+já traz:
+
+- **Conteúdo estático de identidade** no `index.html` (nome, cargo, contatos e
+  resumo). O `js/render.js` substitui esse bloco pela versão completa quando o XML
+  carrega, mas ele garante que rastreadores e navegadores sem JS já vejam o nome.
+  Ao mudar nome/cargo/resumo no XML, atualize também esse bloco no `index.html`.
+- **Meta tags** de `title`, `description`, `author`, Open Graph e Twitter Card
+  (aparência ao compartilhar o link).
+- **Dados estruturados `Person`** (JSON-LD) ligando a página ao LinkedIn, GitHub e
+  Instagram via `sameAs`.
+- **`robots.txt`** e **`sitemap.xml`** na raiz.
+
+Tudo isso aponta para a URL canônica `https://curriculum.valdeirsapara.com.br/`.
+Se publicar em outro endereço, troque essa URL no `index.html` (canonical, Open
+Graph, JSON-LD), no `robots.txt` e no `sitemap.xml`.
+
+### Passos manuais (o código sozinho não indexa)
+
+O SEO no código é necessário, mas **não basta** — o Google só mostra a página
+depois de rastreá-la. Faça uma vez:
+
+1. **Publique** o site no domínio canônico e confirme que ele abre no navegador.
+2. Cadastre o domínio no **[Google Search Console](https://search.google.com/search-console)**
+   e valide a propriedade.
+3. Em **Sitemaps**, envie `sitemap.xml`.
+4. Use **Inspeção de URL** → **Solicitar indexação** para a página inicial.
+5. Reforce os sinais de nome: use o mesmo nome e link do currículo no LinkedIn,
+   GitHub e Instagram (eles já estão no `sameAs`). Quanto mais lugares confiáveis
+   apontarem para a URL, mais rápido e melhor o ranqueamento pelo seu nome.
+
+A indexação leva de alguns dias a algumas semanas — é normal não aparecer no
+mesmo dia.
