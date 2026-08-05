@@ -1,0 +1,283 @@
+/* ============================================================
+   Resume — screen and print styles (Ctrl+P → A4)
+   ============================================================ */
+
+:root {
+  --ink:        #1a1a1a;
+  --ink-soft:   #4a4a4a;
+  --rule:       #9a9a9a;
+  --accent:     #1a1a1a;
+  --paper:      #ffffff;
+  --backdrop:   #e9e9ec;
+
+  --base:       10.5pt;
+  --a4-width:   210mm;
+  --a4-margin:  16mm;
+}
+
+* { box-sizing: border-box; }
+
+/* spacing is driven by the classes below, not by browser defaults */
+p { margin: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 24px 12px;
+  background: var(--backdrop);
+  color: var(--ink);
+  font-family: "Lato", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: var(--base);
+  line-height: 1.5;
+}
+
+/* ---------- sheet ---------- */
+.sheet {
+  width: var(--a4-width);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: var(--a4-margin);
+  background: var(--paper);
+  box-shadow: 0 2px 18px rgba(0, 0, 0, .18);
+}
+
+/* ---------- header ---------- */
+.header {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  margin-bottom: 26px;
+}
+
+.header__photo {
+  width: 33mm;
+  height: 40mm;
+  object-fit: cover;
+  object-position: center 20%;
+  flex: 0 0 auto;
+  background: #ddd;
+}
+
+.header__info { min-width: 0; }
+
+.header__name {
+  margin: 0 0 2px;
+  font-size: 1.85em;
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+
+.header__role {
+  margin: 0 0 10px;
+  font-size: 1.05em;
+  color: var(--ink-soft);
+  font-weight: 400;
+}
+
+.fields { margin: 0; }
+
+.fields__line { margin: 0 0 1px; }
+
+.fields__label { font-weight: 700; }
+
+/* ---------- summary ---------- */
+.summary {
+  margin: 0 0 24px;
+  padding-left: 12px;
+  border-left: 3px solid var(--rule);
+  color: var(--ink-soft);
+}
+
+/* ---------- sections ---------- */
+.section { margin-bottom: 26px; }
+
+.section__title {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1.5px solid var(--rule);
+  font-size: 1.12em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--accent);
+}
+
+/* ---------- education ---------- */
+.education { margin-bottom: 9px; }
+.education:last-child { margin-bottom: 0; }
+.education__course { font-weight: 700; }
+.education__meta { color: var(--ink-soft); }
+
+/* ---------- experience ---------- */
+.experience { margin-bottom: 20px; }
+.experience:last-child { margin-bottom: 0; }
+
+.experience__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.experience__company { font-weight: 700; font-size: 1.05em; }
+
+.experience__period {
+  color: var(--ink-soft);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.experience__role {
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+
+.list {
+  margin: 0 0 8px;
+  padding-left: 18px;
+}
+
+.list li { margin-bottom: 2px; }
+
+/* ---------- technology tags ---------- */
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.techs li {
+  padding: 1px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-size: .88em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+/* ---------- skills / links ---------- */
+.pairs { margin: 0; }
+.pairs__line { margin-bottom: 4px; }
+.pairs__label { font-weight: 700; }
+
+/* ---------- footer ---------- */
+.footer {
+  margin-top: 26px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  font-size: .82em;
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+
+.footer__link { text-decoration-color: var(--rule); }
+
+a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 2px;
+}
+
+a:hover { text-decoration-color: var(--ink); }
+
+/* ---------- print button (screen only) ---------- */
+.print {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font: inherit;
+  font-size: 11pt;
+  cursor: pointer;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
+}
+
+.print:hover { background: #000; }
+
+/* ---------- load failure ---------- */
+.error {
+  padding: 16px 18px;
+  border-left: 4px solid #b3261e;
+  background: #fdecea;
+  color: #5f1512;
+}
+
+.error code {
+  display: inline-block;
+  padding: 1px 5px;
+  background: rgba(0, 0, 0, .07);
+  border-radius: 3px;
+  font-size: .95em;
+}
+
+/* ---------- narrow screens ---------- */
+@media (max-width: 560px) {
+  body { padding: 0; }
+  .sheet { padding: 20px 16px; box-shadow: none; }
+  .header { flex-direction: column; gap: 12px; }
+  .header__photo { width: 30mm; height: 36mm; }
+}
+
+/* ============================================================
+   PRINT — Ctrl+P
+   ============================================================ */
+@page {
+  size: A4;
+  margin: 14mm 15mm;
+}
+
+@media print {
+  html, body {
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-size: 10pt;
+  }
+
+  .sheet {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .print { display: none !important; }
+
+  /* keep a block from being split across pages.
+     Careful: never apply this to .section — a long section would be pushed
+     whole to the next page, leaving the previous one empty. */
+  .experience,
+  .education,
+  .header,
+  .pairs__line,
+  .footer { break-inside: avoid; page-break-inside: avoid; }
+
+  .section__title { break-after: avoid; page-break-after: avoid; }
+
+  .list li,
+  .techs li { break-inside: avoid; page-break-inside: avoid; }
+
+  /* the footer may ride up against the end of the content — that's fine */
+  .footer { margin-top: 18px; }
+
+  a { text-decoration: none; }
+
+  /* make sure tag borders survive printing */
+  .techs li,
+  .section__title,
+  .summary {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

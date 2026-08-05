@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume lang="pt-BR">
+
+  <personal>
+    <name>Valdeir Sampaio Sapará Filho</name>
+    <role>Desenvolvedor de Software</role>
+    <photo>assets/foto.jpg</photo>
+
+    <field label="Data de nascimento">17/03/2003</field>
+    <field label="Endereço">Aparecida - Boa Vista</field>
+    <field label="Telefone" href="tel:+5595991452704">(95) 99145-2704</field>
+    <field label="Email" href="mailto:saparavaldeir@gmail.com">saparavaldeir@gmail.com</field>
+    <field label="Site" href="https://valdeirsapara.com.br">https://valdeirsapara.com.br</field>
+  </personal>
+
+  <section title="Formação Acadêmica">
+    <education>
+      <course>Ciência da Computação — Bacharelado</course>
+      <institution>UERR</institution>
+      <status>Cursando — 7º semestre</status>
+    </education>
+    <education>
+      <course>Ensino Médio</course>
+      <status>Completo</status>
+    </education>
+  </section>
+
+  <section title="Experiência Profissional">
+
+    <experience>
+      <company>Defensoria Pública do Estado de Roraima</company>
+      <role>Desenvolvedor de Software</role>
+      <period start="11/2022" end="Até Hoje"/>
+      <activities>
+        <item>Desenvolvimento e manutenção de sistemas de atendimento, agendamento e gerenciamento de processos jurídicos utilizando Python, Django e Angular.</item>
+        <item>Implementação de arquitetura escalável, garantindo a performance e disponibilidade do sistema para um alto volume de usuários.</item>
+        <item>Otimização de consultas SQL em PostgreSQL, melhorando a eficiência e reduzindo o tempo de resposta do banco de dados.</item>
+        <item>Aplicação de metodologias ágeis (Scrum/Kanban) para organização do fluxo de trabalho e entrega contínua.</item>
+        <item>Realização de testes automatizados e revisão de código (code review) para garantir a qualidade e segurança das aplicações.</item>
+        <item>Uso de Docker para facilitar a implantação e escalabilidade dos serviços.</item>
+        <item>Desenvolvimento de APIs RESTful com Django Rest Framework para integração com outros sistemas.</item>
+      </activities>
+      <technologies>
+        <tech>Python</tech>
+        <tech>Django</tech>
+        <tech>Docker</tech>
+        <tech>Git</tech>
+        <tech>Linux</tech>
+      </technologies>
+    </experience>
+
+    <experience>
+      <company>A&amp;3 Technologia</company>
+      <role>Desenvolvedor Backend de Agentes de IA</role>
+      <period start="06/2025" end="Até Hoje"/>
+      <activities>
+        <item>Desenvolvimento de Agentes de IA, com foco em estatística e atendimento ao cliente.</item>
+        <item>Implementação de arquitetura escalável, garantindo a performance e disponibilidade do sistema para um alto volume de usuários.</item>
+        <item>Desenvolvimento de APIs RESTful com Django Rest Framework para integração com outros sistemas.</item>
+      </activities>
+      <technologies>
+        <tech>Python</tech>
+        <tech>Django</tech>
+        <tech>Docker</tech>
+        <tech>Git</tech>
+        <tech>Ollama</tech>
+        <tech>OpenAI</tech>
+        <tech>LangChain</tech>
+      </technologies>
+    </experience>
+
+    <experience>
+      <company>Eptus da Amazônia</company>
+      <role>Desenvolvedor de Software</role>
+      <period start="08/2023" end="11/2023"/>
+      <activities>
+        <item>Desenvolvimento e implementação de dashboards interativos para visualização de dados críticos do negócio, utilizando Python (Pandas, Matplotlib) e bibliotecas de visualização.</item>
+        <item>Criação de queries SQL otimizadas para extração e transformação de grandes volumes de dados de múltiplas fontes.</item>
+        <item>Automatização de processos de análise de dados, reduzindo em 40% o tempo de geração de relatórios gerenciais.</item>
+        <item>Implementação de soluções de Business Intelligence que permitiram identificar tendências de mercado e oportunidades de negócio.</item>
+        <item>Colaboração com equipes multidisciplinares para entender requisitos e traduzir necessidades de negócio em soluções técnicas eficientes.</item>
+      </activities>
+      <technologies>
+        <tech>Python</tech>
+        <tech>Pandas</tech>
+        <tech>Docker</tech>
+        <tech>Git</tech>
+      </technologies>
+    </experience>
+
+  </section>
+
+  <section title="Hard Skills">
+    <skills>
+      <group name="Backend">Python (Django, Django Rest Framework), NodeJS, Java (Spring)</group>
+      <group name="Frontend">Angular, AngularJS, React, NextJS, JavaScript, HTML, CSS, Liquid</group>
+      <group name="Mobile">Flutter, React Native</group>
+      <group name="DevOps &amp; Infra">Docker, Linux</group>
+      <group name="APIs &amp; Integrações">Django Rest Framework, WhatsApp API, OpenAI, Stripe, MercadoPago, Shopify, n8n</group>
+      <group name="Outras Tecnologias">Java, C, C#, Go, SQL (PostgreSQL)</group>
+    </skills>
+  </section>
+
+  <section title="Presença Digital e Contatos">
+    <links>
+      <link label="LinkedIn" href="https://www.linkedin.com/in/valdeirsapara">linkedin.com/in/valdeirsapara</link>
+      <link label="GitHub" href="https://github.com/valdeirsapara">github.com/valdeirsapara</link>
+      <link label="Instagram" href="https://www.instagram.com/saparavaldeir/">instagram.com/saparavaldeir</link>
+      <link label="Site" href="https://valdeirsapara.com.br">valdeirsapara.com.br</link>
+    </links>
+  </section>
+
+</resume>
