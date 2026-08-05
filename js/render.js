@@ -116,17 +116,29 @@
     }
     block.appendChild(head);
 
-    var role = text(node, 'role');
-    if (role) block.appendChild(el('p', 'experience__role', role));
+    // one <role> per position held at the company; the optional period=""
+    // attribute dates each position separately from the company period above
+    children(node, 'role').forEach(function (role) {
+      var line = el('p', 'experience__role');
+      line.appendChild(el('span', null, role.textContent.trim()));
 
-    var activities = children(node, 'activities')[0];
-    if (activities) {
+      var rolePeriod = role.getAttribute('period');
+      if (rolePeriod) line.appendChild(el('span', 'experience__role-period', rolePeriod));
+
+      block.appendChild(line);
+    });
+
+    // one <activities> block per subheading; title="" is optional
+    children(node, 'activities').forEach(function (activities) {
+      var groupTitle = activities.getAttribute('title');
+      if (groupTitle) block.appendChild(el('h3', 'experience__group', groupTitle));
+
       var list = el('ul', 'list');
       children(activities, 'item').forEach(function (item) {
         list.appendChild(el('li', null, item.textContent.trim().replace(/\s+/g, ' ')));
       });
       if (list.children.length) block.appendChild(list);
-    }
+    });
 
     var technologies = children(node, 'technologies')[0];
     if (technologies) {

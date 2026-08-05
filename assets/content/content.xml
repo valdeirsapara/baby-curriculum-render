@@ -3,86 +3,118 @@
 
   <personal>
     <name>Valdeir Sampaio Sapará Filho</name>
-    <role>Desenvolvedor de Software</role>
+    <role>Desenvolvedor Backend — Python/Django</role>
     <photo>assets/foto.jpg</photo>
 
-    <field label="Data de nascimento">17/03/2003</field>
-    <field label="Endereço">Aparecida - Boa Vista</field>
+    <field label="Endereço">Boa Vista – RR</field>
     <field label="Telefone" href="tel:+5595991452704">(95) 99145-2704</field>
     <field label="Email" href="mailto:saparavaldeir@gmail.com">saparavaldeir@gmail.com</field>
-    <field label="Site" href="https://valdeirsapara.com.br">https://valdeirsapara.com.br</field>
+    <field label="Site" href="https://valdeirsapara.com.br">valdeirsapara.com.br</field>
   </personal>
 
-  <section title="Formação Acadêmica">
-    <education>
-      <course>Ciência da Computação — Bacharelado</course>
-      <institution>UERR</institution>
-      <status>Cursando — 7º semestre</status>
-    </education>
-    <education>
-      <course>Ensino Médio</course>
-      <status>Completo</status>
-    </education>
-  </section>
+  <summary>Desenvolvedor backend especializado em Python/Django e integrações governamentais/judiciais brasileiras (MNI/CNJ, PROJUDI, ICP-Brasil). Chefe da Seção de Desenvolvimento de Sistemas da DPE-RR, liderando uma equipe de 10 pessoas e respondendo pelos sistemas institucionais críticos em produção. Gestor Técnico de Roraima na Coordenadoria Nacional do Solar. Também atuo com agentes de IA (LangChain, OpenAI, Ollama) e com projetos freelance sob a marca Valdeir Sapará Dev.</summary>
 
   <section title="Experiência Profissional">
 
     <experience>
-      <company>Defensoria Pública do Estado de Roraima</company>
-      <role>Desenvolvedor de Software</role>
-      <period start="11/2022" end="Até Hoje"/>
-      <activities>
-        <item>Desenvolvimento e manutenção de sistemas de atendimento, agendamento e gerenciamento de processos jurídicos utilizando Python, Django e Angular.</item>
-        <item>Implementação de arquitetura escalável, garantindo a performance e disponibilidade do sistema para um alto volume de usuários.</item>
-        <item>Otimização de consultas SQL em PostgreSQL, melhorando a eficiência e reduzindo o tempo de resposta do banco de dados.</item>
-        <item>Aplicação de metodologias ágeis (Scrum/Kanban) para organização do fluxo de trabalho e entrega contínua.</item>
-        <item>Realização de testes automatizados e revisão de código (code review) para garantir a qualidade e segurança das aplicações.</item>
-        <item>Uso de Docker para facilitar a implantação e escalabilidade dos serviços.</item>
-        <item>Desenvolvimento de APIs RESTful com Django Rest Framework para integração com outros sistemas.</item>
+      <company>Defensoria Pública do Estado de Roraima (DPE-RR) — DTIC</company>
+      <period start="11/2022" end="atual"/>
+      <role period="04/2026 – atual">Chefe da Seção de Desenvolvimento de Sistemas (SDS)</role>
+      <role period="11/2022 – 03/2026">Desenvolvedor de Software</role>
+
+      <activities title="Liderança">
+        <item>Liderança técnica de equipe de 10 pessoas: definição de arquitetura, padrões de código, revisão técnica e priorização das demandas de sistemas junto à DTIC.</item>
+        <item>Gestor Técnico de Roraima na Coordenadoria Nacional do Solar, representando a DPE-RR nas decisões técnicas e no alinhamento de evoluções e integrações do sistema entre as Defensorias Públicas.</item>
       </activities>
+
+      <activities title="Sistemas e entregas">
+        <item>Responsável pelos sistemas institucionais críticos: Solar (gestão processual jurídica), ProcAPI e SISAT.</item>
+        <item>ProcAPI: integração SOAP/MNI com TJRR/PROJUDI, incluindo assinatura digital ICP-Brasil e peticionamento integrado — mapeamento De-Para entre fases processuais do Solar e tipos de movimento do tribunal.</item>
+        <item>PNTP 2026: sistema Django + Playwright que audita automaticamente o portal institucional contra os critérios de transparência da ATRICON.</item>
+        <item>Inscreve: plataforma de inscrição em eventos (Django + React) com geração de QR Code, formulários públicos por token e exportação CSV.</item>
+        <item>Migração da infraestrutura de Docker para Docker Swarm; pipelines GitLab CI/CD; roteamento Nginx; observabilidade com Sentry.</item>
+        <item>Resolução de incidentes em produção: persistência e memória do Redis, overflow da listen queue do uWSGI, consumo de memória de workers Celery, otimização de consultas PostgreSQL.</item>
+        <item>APIs RESTful com Django Rest Framework; code review e testes automatizados; Scrum/Kanban.</item>
+      </activities>
+
       <technologies>
         <tech>Python</tech>
         <tech>Django</tech>
-        <tech>Docker</tech>
-        <tech>Git</tech>
+        <tech>DRF</tech>
+        <tech>PostgreSQL</tech>
+        <tech>Celery</tech>
+        <tech>RabbitMQ</tech>
+        <tech>Redis</tech>
+        <tech>Docker Swarm</tech>
+        <tech>Nginx</tech>
+        <tech>uWSGI</tech>
+        <tech>AngularJS</tech>
+        <tech>Angular</tech>
+        <tech>React</tech>
         <tech>Linux</tech>
+        <tech>Git</tech>
       </technologies>
     </experience>
 
     <experience>
-      <company>A&amp;3 Technologia</company>
+      <company>A&amp;3 Tecnologia</company>
+      <period start="06/2025" end="atual"/>
       <role>Desenvolvedor Backend de Agentes de IA</role>
-      <period start="06/2025" end="Até Hoje"/>
       <activities>
-        <item>Desenvolvimento de Agentes de IA, com foco em estatística e atendimento ao cliente.</item>
-        <item>Implementação de arquitetura escalável, garantindo a performance e disponibilidade do sistema para um alto volume de usuários.</item>
-        <item>Desenvolvimento de APIs RESTful com Django Rest Framework para integração com outros sistemas.</item>
+        <item>Desenvolvimento de agentes de IA voltados a estatística e atendimento ao cliente.</item>
+        <item>APIs RESTful com Django Rest Framework para integração com sistemas externos.</item>
       </activities>
       <technologies>
         <tech>Python</tech>
         <tech>Django</tech>
         <tech>Docker</tech>
         <tech>Git</tech>
-        <tech>Ollama</tech>
-        <tech>OpenAI</tech>
         <tech>LangChain</tech>
+        <tech>OpenAI</tech>
+        <tech>Ollama</tech>
+      </technologies>
+    </experience>
+
+    <experience>
+      <company>Valdeir Sapará Dev</company>
+      <period start="2025" end="atual"/>
+      <role>Freelancer — Desenvolvedor Full Stack</role>
+      <activities>
+        <item>RecAPI: sistema de monitoramento de câmeras IP com 250+ streams RTSP simultâneos (Hikvision SDK, conversão HLS via FFmpeg, orquestração de tarefas com Celery).</item>
+        <item>Plataforma de gestão de associados white-label (associados, financeiro, comunicação e assembleia online).</item>
+        <item>LogísticaApp: plataforma de logística com backend Django/DRF, app React Native/Expo, autenticação JWT multi-tenant e otimização de rotas.</item>
+        <item>Microsserviço de pagamentos white-label com integração Asaas e Stripe (incl. Stripe Connect para contas Express no Brasil).</item>
+        <item>Automação de atendimento via WhatsApp com IA (Django + Evolution API + Celery), entregue em Docker.</item>
+      </activities>
+      <technologies>
+        <tech>Django</tech>
+        <tech>DRF</tech>
+        <tech>React</tech>
+        <tech>React Native</tech>
+        <tech>PostgreSQL</tech>
+        <tech>Redis</tech>
+        <tech>Celery</tech>
+        <tech>Docker</tech>
+        <tech>Stripe</tech>
+        <tech>Asaas</tech>
+        <tech>FFmpeg</tech>
+        <tech>WhatsApp API</tech>
       </technologies>
     </experience>
 
     <experience>
       <company>Eptus da Amazônia</company>
-      <role>Desenvolvedor de Software</role>
       <period start="08/2023" end="11/2023"/>
+      <role>Desenvolvedor de Software</role>
       <activities>
-        <item>Desenvolvimento e implementação de dashboards interativos para visualização de dados críticos do negócio, utilizando Python (Pandas, Matplotlib) e bibliotecas de visualização.</item>
-        <item>Criação de queries SQL otimizadas para extração e transformação de grandes volumes de dados de múltiplas fontes.</item>
-        <item>Automatização de processos de análise de dados, reduzindo em 40% o tempo de geração de relatórios gerenciais.</item>
-        <item>Implementação de soluções de Business Intelligence que permitiram identificar tendências de mercado e oportunidades de negócio.</item>
-        <item>Colaboração com equipes multidisciplinares para entender requisitos e traduzir necessidades de negócio em soluções técnicas eficientes.</item>
+        <item>Dashboards interativos para visualização de dados de negócio com Python (Pandas, Matplotlib).</item>
+        <item>Automatização de processos de análise, reduzindo em 40% o tempo de geração de relatórios gerenciais.</item>
+        <item>Queries SQL otimizadas para extração e transformação de grandes volumes de dados de múltiplas fontes.</item>
       </activities>
       <technologies>
         <tech>Python</tech>
         <tech>Pandas</tech>
+        <tech>SQL</tech>
         <tech>Docker</tech>
         <tech>Git</tech>
       </technologies>
@@ -90,14 +122,29 @@
 
   </section>
 
+  <section title="Formação">
+    <education>
+      <course>Análise e Desenvolvimento de Sistemas</course>
+      <institution>Centro Universitário União das Américas (Descomplica)</institution>
+      <status>Em andamento</status>
+    </education>
+    <education>
+      <course>Ciência da Computação — Bacharelado</course>
+      <institution>UERR</institution>
+      <status>7 semestres cursados</status>
+    </education>
+  </section>
+
   <section title="Hard Skills">
     <skills>
-      <group name="Backend">Python (Django, Django Rest Framework), NodeJS, Java (Spring)</group>
-      <group name="Frontend">Angular, AngularJS, React, NextJS, JavaScript, HTML, CSS, Liquid</group>
+      <group name="Backend">Python (Django, Django Rest Framework), Node.js, Java (Spring)</group>
+      <group name="Frontend">Angular, AngularJS, React, Next.js, JavaScript, HTML, CSS, Liquid</group>
       <group name="Mobile">Flutter, React Native</group>
-      <group name="DevOps &amp; Infra">Docker, Linux</group>
-      <group name="APIs &amp; Integrações">Django Rest Framework, WhatsApp API, OpenAI, Stripe, MercadoPago, Shopify, n8n</group>
-      <group name="Outras Tecnologias">Java, C, C#, Go, SQL (PostgreSQL)</group>
+      <group name="DevOps &amp; Infra">Docker, Docker Swarm, Linux, Nginx, uWSGI, GitLab CI/CD</group>
+      <group name="Dados &amp; Mensageria">PostgreSQL, Redis, Celery, RabbitMQ</group>
+      <group name="IA">LangChain, OpenAI API, Ollama</group>
+      <group name="Integrações">MNI/CNJ, PROJUDI, ICP-Brasil, WhatsApp API, Stripe, MercadoPago, Asaas, Shopify, n8n</group>
+      <group name="Outras linguagens">C, C#, Go, SQL</group>
     </skills>
   </section>
 

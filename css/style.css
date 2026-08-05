@@ -131,8 +131,27 @@ body {
 }
 
 .experience__role {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
   color: var(--ink-soft);
-  margin-bottom: 6px;
+  margin-bottom: 2px;
+}
+
+.experience__role:last-of-type { margin-bottom: 6px; }
+
+.experience__role-period {
+  white-space: nowrap;
+  font-size: .95em;
+  font-variant-numeric: tabular-nums;
+}
+
+.experience__group {
+  margin: 8px 0 3px;
+  font-size: 1em;
+  font-weight: 700;
 }
 
 .list {
@@ -237,12 +256,19 @@ a:hover { text-decoration-color: var(--ink); }
 }
 
 @media print {
+  /* tighter than the screen so the whole resume fits in fewer sheets */
   html, body {
     background: #fff;
     margin: 0;
     padding: 0;
-    font-size: 10pt;
+    font-size: 9.7pt;
+    line-height: 1.38;
   }
+
+  .section { margin-bottom: 17px; }
+  .summary { margin-bottom: 16px; }
+  .header { margin-bottom: 18px; }
+  .experience { margin-bottom: 14px; }
 
   .sheet {
     width: auto;
@@ -254,16 +280,23 @@ a:hover { text-decoration-color: var(--ink); }
 
   .print { display: none !important; }
 
-  /* keep a block from being split across pages.
-     Careful: never apply this to .section — a long section would be pushed
-     whole to the next page, leaving the previous one empty. */
-  .experience,
+  /* Keep small blocks whole. Never do this for .section or .experience:
+     a block taller than the remaining space would be pushed to the next
+     page as a whole, leaving the current one half empty. Long experiences
+     are allowed to split; the rules below keep the split from looking bad. */
   .education,
   .header,
   .pairs__line,
   .footer { break-inside: avoid; page-break-inside: avoid; }
 
-  .section__title { break-after: avoid; page-break-after: avoid; }
+  /* never strand a heading at the bottom of a page */
+  .section__title,
+  .experience__head,
+  .experience__role,
+  .experience__group { break-after: avoid; page-break-after: avoid; }
+
+  /* don't leave a single lonely line on either side of a page break */
+  .list { orphans: 2; widows: 2; }
 
   .list li,
   .techs li { break-inside: avoid; page-break-inside: avoid; }
