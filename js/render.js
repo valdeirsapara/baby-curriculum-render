@@ -227,8 +227,16 @@
 
     document.documentElement.lang = resume.getAttribute('lang') || 'pt-BR';
 
-    var name = text(resume.querySelector('personal') || resume, 'name');
-    if (name) document.title = 'Currículo — ' + name;
+    var personalNode = resume.querySelector('personal') || resume;
+    var name = text(personalNode, 'name');
+    var role = text(personalNode, 'role');
+    // keep the rendered <title> aligned with the SEO title in index.html so the
+    // name stays first when Googlebot indexes the JS-rendered page
+    if (name) {
+      document.title = role
+        ? name + ' — ' + role + ' | Currículo'
+        : name + ' — Currículo';
+    }
 
     var frag = document.createDocumentFragment();
 
