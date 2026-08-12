@@ -12,7 +12,7 @@
     <field label="Site" href="https://valdeirsapara.com.br">valdeirsapara.com.br</field>
   </personal>
 
-  <summary>Engenheiro de software com mais de 3 anos em Python/Django e liderança técnica de uma equipe de 10 pessoas. Especialista em integrações com sistemas judiciais brasileiros (MNI/CNJ, PROJUDI, ICP-Brasil) e em sistemas de alta criticidade em produção. Chefe da Seção de Desenvolvimento de Sistemas da DPE-RR e Gestor Técnico de Roraima na Coordenadoria Nacional do Solar. Também atuo com agentes de IA (LangChain, OpenAI, Ollama) e projetos freelance sob a marca Valdeir Sapará Dev.</summary>
+  <summary>Engenheiro de software com mais de 3 anos em Python/Django e rápida progressão na DPE-RR — de estagiário a Chefe da Seção de Desenvolvimento de Sistemas, hoje liderando uma equipe de 10 pessoas. Especialista em integrações com sistemas judiciais brasileiros (MNI/CNJ, PROJUDI, ICP-Brasil) e em sistemas de alta criticidade em produção. Gestor Técnico de Roraima na Coordenadoria Nacional do Solar. Também atuo com agentes de IA (LangChain, OpenAI, Ollama) e projetos freelance sob a marca Valdeir Sapará Dev.</summary>
 
   <section title="Experiência Profissional">
 
@@ -20,7 +20,8 @@
       <company>Defensoria Pública do Estado de Roraima (DPE-RR) — DTIC</company>
       <period start="11/2022" end="atual"/>
       <role period="04/2026 – atual">Chefe da Seção de Desenvolvimento de Sistemas (SDS)</role>
-      <role period="11/2022 – 03/2026">Desenvolvedor de Software</role>
+      <role period="10/2024 – 04/2026">Desenvolvedor de Sistemas</role>
+      <role period="11/2022 – 10/2024">Estagiário de TI</role>
 
       <activities title="Liderança">
         <item>Liderança técnica de equipe de 10 pessoas: definição de arquitetura, padrões de código, revisão técnica e priorização das demandas de sistemas junto à DTIC.</item>
