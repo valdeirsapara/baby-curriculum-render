@@ -29,7 +29,7 @@
       </activities>
 
       <activities title="Sistemas e entregas">
-        <item>Responsável pelos sistemas institucionais críticos: Solar (gestão processual jurídica), ProcAPI e SISAT.</item>
+        <item>Responsável por 3 sistemas institucionais críticos (Solar — gestão processual jurídica, ProcAPI e SISAT), usados por cerca de mil usuários na instituição.</item>
         <item>ProcAPI: integração SOAP/MNI com TJRR/PROJUDI, incluindo assinatura digital ICP-Brasil e peticionamento integrado — mapeamento De-Para entre fases processuais do Solar e tipos de movimento do tribunal.</item>
         <item>PNTP 2026: sistema Django + Playwright que audita automaticamente o portal institucional contra os critérios de transparência da ATRICON.</item>
         <item>Inscreve: plataforma de inscrição em eventos (Django + React) com geração de QR Code, formulários públicos por token e exportação CSV.</item>
