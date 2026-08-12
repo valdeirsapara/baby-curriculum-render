@@ -3,7 +3,7 @@
 
   <personal>
     <name>Valdeir Sampaio Sapará Filho</name>
-    <role>Desenvolvedor Backend — Python/Django</role>
+    <role>Tech Lead · Engenheiro de Software Sênior — Python/Django</role>
     <photo>assets/foto.jpg</photo>
 
     <field label="Endereço">Boa Vista – RR</field>
@@ -12,7 +12,7 @@
     <field label="Site" href="https://valdeirsapara.com.br">valdeirsapara.com.br</field>
   </personal>
 
-  <summary>Desenvolvedor backend especializado em Python/Django e integrações governamentais/judiciais brasileiras (MNI/CNJ, PROJUDI, ICP-Brasil). Chefe da Seção de Desenvolvimento de Sistemas da DPE-RR, liderando uma equipe de 10 pessoas e respondendo pelos sistemas institucionais críticos em produção. Gestor Técnico de Roraima na Coordenadoria Nacional do Solar. Também atuo com agentes de IA (LangChain, OpenAI, Ollama) e com projetos freelance sob a marca Valdeir Sapará Dev.</summary>
+  <summary>Engenheiro de software com mais de 3 anos em Python/Django e liderança técnica de uma equipe de 10 pessoas. Especialista em integrações com sistemas judiciais brasileiros (MNI/CNJ, PROJUDI, ICP-Brasil) e em sistemas de alta criticidade em produção. Chefe da Seção de Desenvolvimento de Sistemas da DPE-RR e Gestor Técnico de Roraima na Coordenadoria Nacional do Solar. Também atuo com agentes de IA (LangChain, OpenAI, Ollama) e projetos freelance sob a marca Valdeir Sapará Dev.</summary>
 
   <section title="Experiência Profissional">
 
@@ -59,7 +59,7 @@
     <experience>
       <company>A&amp;3 Tecnologia</company>
       <period start="06/2025" end="atual"/>
-      <role>Desenvolvedor Backend de Agentes de IA</role>
+      <role>Desenvolvedor Backend de Agentes de IA · PJ (contrato paralelo)</role>
       <activities>
         <item>Desenvolvimento de agentes de IA voltados a estatística e atendimento ao cliente.</item>
         <item>APIs RESTful com Django Rest Framework para integração com sistemas externos.</item>
@@ -137,14 +137,12 @@
 
   <section title="Hard Skills">
     <skills>
-      <group name="Backend">Python (Django, Django Rest Framework), Node.js, Java (Spring)</group>
-      <group name="Frontend">Angular, AngularJS, React, Next.js, JavaScript, HTML, CSS, Liquid</group>
-      <group name="Mobile">Flutter, React Native</group>
-      <group name="DevOps &amp; Infra">Docker, Docker Swarm, Linux, Nginx, uWSGI, GitLab CI/CD</group>
+      <group name="Backend">Python, Django, Django Rest Framework</group>
       <group name="Dados &amp; Mensageria">PostgreSQL, Redis, Celery, RabbitMQ</group>
+      <group name="DevOps &amp; Infra">Docker, Docker Swarm, Linux, Nginx, GitLab CI/CD</group>
+      <group name="Frontend">React, React Native</group>
       <group name="IA">LangChain, OpenAI API, Ollama</group>
-      <group name="Integrações">MNI/CNJ, PROJUDI, ICP-Brasil, WhatsApp API, Stripe, MercadoPago, Asaas, Shopify, n8n</group>
-      <group name="Outras linguagens">C, C#, Go, SQL</group>
+      <group name="Integrações">MNI/CNJ, PROJUDI, ICP-Brasil, Stripe</group>
     </skills>
   </section>
 
