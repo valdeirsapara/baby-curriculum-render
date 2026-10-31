@@ -7,7 +7,6 @@
     <photo>assets/foto.jpg</photo>
 
     <field label="Endereço">Boa Vista – RR</field>
-    <field label="Telefone" href="tel:+5595991452704">(95) 99145-2704</field>
     <field label="Email" href="mailto:saparavaldeir@gmail.com">saparavaldeir@gmail.com</field>
     <field label="Site" href="https://valdeirsapara.com.br">valdeirsapara.com.br</field>
   </personal>
